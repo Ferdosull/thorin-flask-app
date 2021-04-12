@@ -18,17 +18,17 @@ def index():
 
 @app.route("/about")  # Decorator
 def about():
-    return render_template("about.html")
+    return render_template("about.html", page_title="About", list_of_numbers=[1, 2, 3])
 
 
 @app.route("/contact")  # Decorator
 def contact():
-    return render_template("contact.html")
+    return render_template("contact.html", page_title="Contact")
 
 
 @app.route("/careers")  # Decorator
 def careers():
-    return render_template("careers.html")
+    return render_template("careers.html", page_title="Careers")
 
 
 if __name__ == "__main__":  # Main = default module in python
